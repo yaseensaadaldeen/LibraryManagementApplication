@@ -27,7 +27,7 @@ public class PatronService {
     }
 
     public Patron updatePatron(Long id, Patron patron) {
-        patron.setId(id);  // Ensure the ID is set for the update
+        patron.setId(id);  
         return patronRepository.save(patron);
     }
 

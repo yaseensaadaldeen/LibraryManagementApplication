@@ -25,7 +25,7 @@ public class BookController {
     @GetMapping
     public List<Book> getAllBooks() {
         List<Book> books = bookService.getAllBooks();
-        System.out.println("Books retrieved: " + books); // Debugging line
+        System.out.println("Books retrieved: " + books); 
         return books;
     }
 

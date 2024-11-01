@@ -23,12 +23,12 @@ public class BorrowingRecordService {
 
     public BorrowingRecord borrowBook(Long bookId, Long patronId) {
         BorrowingRecord record = new BorrowingRecord();
-        Book book = new Book(); // Create a new Book instance
-        book.setId(bookId); // Set the ID using the setter
+        Book book = new Book();
+        book.setId(bookId); 
         record.setBook(book);
 
-        Patron patron = new Patron(); // Create a new Patron instance
-        patron.setId(patronId); // Set the ID using the setter
+        Patron patron = new Patron();
+        patron.setId(patronId); 
         record.setPatron(patron);
 
         record.setBorrowDate(LocalDate.now());
@@ -41,6 +41,6 @@ public class BorrowingRecordService {
             record.setReturnDate(LocalDate.now());
             return borrowingRecordRepository.save(record);
         }
-        return null;  // Or throw an exception
+        return null;
     }
 }

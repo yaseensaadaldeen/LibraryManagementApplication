@@ -18,9 +18,6 @@ public class LibraryService {
     public String getLibraryStats() {
         long totalBooks = bookRepository.count();
         long totalPatrons = patronRepository.count();
-        // Additional statistics can be added as needed
         return "Total Books: " + totalBooks + ", Total Patrons: " + totalPatrons;
     }
-
-    // Other methods for overdue books, borrowed books, etc. can be added here
 }

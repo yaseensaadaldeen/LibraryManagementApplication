@@ -19,7 +19,6 @@ public class Book {
     private int publicationYear;
     private String isbn;
 
-    // Getters and setters for all fields
     public Long getId() {
         return id;
     }

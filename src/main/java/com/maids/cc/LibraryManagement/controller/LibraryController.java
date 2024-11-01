@@ -14,12 +14,9 @@ public class LibraryController {
     @Autowired
     private LibraryService libraryService;
 
-    // Endpoint to get library statistics or information
     @GetMapping("/stats")
     public String getLibraryStats() {
-        // Implement logic to return statistics like total books, total patrons, etc.
         return libraryService.getLibraryStats();
     }
 
-    // Other general library operations can be added here
 }
